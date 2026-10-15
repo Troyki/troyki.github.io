@@ -1,73 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArtCraft Studio</title>
-    <meta
-      name="description"
-      content="ArtCraft-inspired editorial landing page with bold typography and abstract motionless decoration."
-    />
+    <meta name="description" content="A numbered, black-background homepage skeleton." />
+    <title>Troys Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="canvas" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="site-header" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="1. Troy's Portfolio home">
+          01 <span>TROYS PORTFOLIO</span>
+        </a>
 
-    <header class="topbar" role="banner">
-      <div class="brand-wrap">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <p class="brand-wordmark">ARTCRAFT</p>
-      </div>
+        <nav class="desktop-nav" aria-label="Primary links">
+          <a href="#placeholder-10">02 / WEBSITE DESIGN EXPERIENCE</a>
+          <a href="#placeholder-11">03 / ABOUT TROY</a>
+          <a href="#placeholder-12">04 / CONTACT</a>
+        </nav>
 
-      <nav class="topnav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#launch">Launch</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="topbar-actions">
-        <a class="pricing-link" id="pricing" href="#pricing">Pricing</a>
-
-        <button class="icon-button" type="button" aria-label="Search">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <circle cx="11" cy="11" r="6.5"></circle>
-            <path d="M16 16L21 21"></path>
-          </svg>
+        <button class="nav-button" type="button" aria-label="5. Navigation action">
+          <span>05 / BUTTON</span><span aria-hidden="true">↗</span>
         </button>
+      </header>
 
-        <button class="icon-button" type="button" aria-label="Account menu">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <circle cx="12" cy="8" r="3.5"></circle>
-            <path d="M5 20c0-3.3 2.7-6 7-6s7 2.7 7 6"></path>
-          </svg>
-        </button>
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-topline">
+            <p>06 / SMALL LABEL</p>
+            <p>07 / EST. 2026</p>
+          </div>
 
-        <a class="launch-button" id="launch" href="#launch">Launch App</a>
-      </div>
-    </header>
+          <div class="hero-copy">
+            <p class="eyebrow">08 / HERO EYEBROW</p>
+            <h1 id="hero-title">09 / WELCOME TO TROYS<br />WEBSITE DESIGN PORTFOLIO</h1>
+            <p class="hero-subtitle">10 / HERO SUBTITLE — A SHORT, CLEAR LINE OF EXAMPLE TEXT.</p>
+            <p class="hero-description">
+              11 / PARAGRAPH — Use this area for a concise introduction to your brand,
+              project, collection, or service. It stays deliberately simple so the
+              hierarchy is easy to inspect.
+            </p>
+          </div>
 
-    <main class="hero" id="home">
-      <p class="hero-kicker">Digital Art Direction Platform</p>
-      <h1>ARTCRAFT</h1>
-      <p class="hero-lede">
-        Build bold visual identities with a collaborative, editorial workflow designed for teams that ship
-        quickly and obsess over detail.
-      </p>
+          <div class="hero-actions" aria-label="Hero actions">
+            <a class="button button-solid" href="#placeholder-10">
+              12 / PRIMARY BUTTON <span aria-hidden="true">↗</span>
+            </a>
+            <a class="button button-outline" href="#placeholder-11">
+              13 / SECONDARY BUTTON <span aria-hidden="true">↓</span>
+            </a>
+          </div>
 
-      <div class="hero-actions">
-        <a class="cta cta-primary" href="#launch">Launch App</a>
-        <a class="cta cta-secondary" href="#demo">Book Demo</a>
-      </div>
+          <div class="hero-bottomline">
+            <a href="#placeholder-12">14 / METADATA LINK</a>
+            <span>15 / SMALL METADATA TEXT</span>
+            <a href="#footer">16 / TEXT LINK ↘</a>
+          </div>
+        </section>
 
-      <div class="hero-meta" id="contact" role="list" aria-label="Platform highlights">
-        <p role="listitem">No-code ready</p>
-        <p role="listitem">Enterprise secure</p>
-        <p role="listitem">Global team support</p>
-      </div>
-    </main>
+        <section class="placeholder-area" aria-label="Numbered layout placeholders">
+          <article class="placeholder-card card-tall" id="placeholder-10">
+            <span>17 / DECORATIVE CARD</span>
+            <small>PLACEHOLDER BLOCK</small>
+          </article>
 
-    <aside class="side-marker side-marker-left" aria-hidden="true">01 / INTRO</aside>
-    <aside class="side-marker side-marker-right" aria-hidden="true">SCROLL</aside>
+          <article class="placeholder-card card-wide" id="placeholder-11">
+            <span>18 / FEATURED SECTION</span>
+            <small>PLACEHOLDER BLOCK</small>
+          </article>
+
+          <article class="placeholder-card card-small" id="placeholder-12">
+            <span>19 / SMALL CARD</span>
+            <small>PLACEHOLDER</small>
+          </article>
+
+          <article class="placeholder-card card-outline">
+            <span>20 / FLOATING DETAIL</span>
+            <small>PLACEHOLDER</small>
+          </article>
+        </section>
+      </main>
+
+      <footer id="footer" class="site-footer">
+        <span>21 / FOOTER TEXT</span>
+        <a href="#top">22 / BACK TO TOP ↑</a>
+      </footer>
+    </div>
   </body>
 </html>
