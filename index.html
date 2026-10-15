@@ -6,61 +6,68 @@
     <title>ArtCraft Studio</title>
     <meta
       name="description"
-      content="ArtCraft-style creative studio landing page focused on bold typography and clean layout."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
+      content="ArtCraft-inspired editorial landing page with bold typography and abstract motionless decoration."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <p class="brand">ARTCRAFT</p>
-        <nav class="topnav" aria-label="Primary">
-          <a href="#work">Work</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+    <div class="canvas" aria-hidden="true"></div>
 
-      <main>
-        <section class="hero" id="work">
-          <p class="eyebrow">Design Studio</p>
-          <h1>Crafting standout digital experiences for modern brands.</h1>
-          <p class="lede">
-            We design high-impact websites, visual identities, and creative campaigns with a clear,
-            editorial-inspired look.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Start a Project</a>
-            <a class="button button-ghost" href="#services">View Services</a>
-          </div>
-        </section>
+    <header class="topbar" role="banner">
+      <div class="brand-wrap">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <p class="brand-wordmark">ARTCRAFT</p>
+      </div>
 
-        <section class="grid" id="services" aria-label="Services">
-          <article class="card">
-            <h2>Brand Direction</h2>
-            <p>Strategic visual systems, tone, and messaging for lasting recognition.</p>
-          </article>
-          <article class="card">
-            <h2>Website Design</h2>
-            <p>Fast, responsive, and conversion-focused web experiences for launches and growth.</p>
-          </article>
-          <article class="card">
-            <h2>Campaign Creative</h2>
-            <p>Digital-first concepts for social, product drops, and ongoing brand storytelling.</p>
-          </article>
-        </section>
-      </main>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#launch">Launch</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <footer class="footer" id="contact">
-        <p>hello@artcraft.studio</p>
-        <p>© 2026 ArtCraft Studio</p>
-      </footer>
-    </div>
+      <div class="topbar-actions">
+        <a class="pricing-link" id="pricing" href="#pricing">Pricing</a>
+
+        <button class="icon-button" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16L21 21"></path>
+          </svg>
+        </button>
+
+        <button class="icon-button" type="button" aria-label="Account menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="8" r="3.5"></circle>
+            <path d="M5 20c0-3.3 2.7-6 7-6s7 2.7 7 6"></path>
+          </svg>
+        </button>
+
+        <a class="launch-button" id="launch" href="#launch">Launch App</a>
+      </div>
+    </header>
+
+    <main class="hero" id="home">
+      <p class="hero-kicker">Digital Art Direction Platform</p>
+      <h1>ARTCRAFT</h1>
+      <p class="hero-lede">
+        Build bold visual identities with a collaborative, editorial workflow designed for teams that ship
+        quickly and obsess over detail.
+      </p>
+
+      <div class="hero-actions">
+        <a class="cta cta-primary" href="#launch">Launch App</a>
+        <a class="cta cta-secondary" href="#demo">Book Demo</a>
+      </div>
+
+      <div class="hero-meta" id="contact" role="list" aria-label="Platform highlights">
+        <p role="listitem">No-code ready</p>
+        <p role="listitem">Enterprise secure</p>
+        <p role="listitem">Global team support</p>
+      </div>
+    </main>
+
+    <aside class="side-marker side-marker-left" aria-hidden="true">01 / INTRO</aside>
+    <aside class="side-marker side-marker-right" aria-hidden="true">SCROLL</aside>
   </body>
 </html>
