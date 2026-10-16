@@ -129,12 +129,12 @@ button {
 }
 
 h1 {
-  max-width: 1000px;
-  margin: 0;
-  font-size: clamp(48px, 8.2vw, 128px);
-  font-weight: 700;
-  line-height: 0.85;
-  letter-spacing: -0.085em;
+    max-width: 1000px;
+    margin: 0;
+    font-size: clamp(33.6px, 5.74vw, 89.6px);
+    font-weight: 700;
+    line-height: 0.85;
+    letter-spacing: -0.085em;
 }
 
 .hero-subtitle {
@@ -291,9 +291,9 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(49px, 15vw, 76px);
+    font-size: clamp(34.3px, 10.5vw, 53.2px);
     line-height: 0.88;
-  }
+}
 
   .hero-subtitle {
     margin-top: 25px;
