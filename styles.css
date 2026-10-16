@@ -131,7 +131,7 @@ button {
 h1 {
     max-width: 1000px;
     margin: 0;
-    font-size: clamp(33.6px, 5.74vw, 89.6px);
+    font-size: clamp(24px, 4.1vw, 64px);
     font-weight: 700;
     line-height: 0.85;
     letter-spacing: -0.085em;
@@ -291,7 +291,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(34.3px, 10.5vw, 53.2px);
+    font-size: clamp(24.5px, 7.5vw, 38px);
     line-height: 0.88;
 }
 
