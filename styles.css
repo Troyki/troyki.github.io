@@ -1,131 +1,131 @@
 :root {
-  color-scheme: dark;
-  --black: #050505;
-  --ink: #f3f1eb;
-  --muted: #999790;
-  --line: #30302d;
-  --card: #11110f;
-  --acid: #d9ff3f;
+    color-scheme: dark;
+    --black: #050505;
+    --ink: #f3f1eb;
+    --muted: #999790;
+    --line: #30302d;
+    --card: #11110f;
+    --acid: #d9ff3f;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background: var(--black);
-  color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: var(--black);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 button {
-  font: inherit;
+    font: inherit;
 }
 
 .page-shell {
-  min-height: 100vh;
-  overflow: hidden;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .site-header,
 .site-footer,
 .hero,
 .placeholder-area {
-  width: min(100% - 48px, 1440px);
-  margin-inline: auto;
+    width: min(100% - 48px, 1440px);
+    margin-inline: auto;
 }
 
 .site-header {
-  min-height: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  border-bottom: 1px solid var(--line);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid var(--line);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .brand span {
-  font-size: 16px;
-  letter-spacing: -0.03em;
+    font-size: 16px;
+    letter-spacing: -0.03em;
 }
 
 .desktop-nav {
-  display: flex;
-  gap: clamp(18px, 4vw, 65px);
-  color: var(--muted);
+    display: flex;
+    gap: clamp(18px, 4vw, 65px);
+    color: var(--muted);
 }
 
 .desktop-nav a:hover,
 .hero-bottomline a:hover,
 .site-footer a:hover {
-  color: var(--acid);
+    color: var(--acid);
 }
 
 .nav-button {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 10px 0 10px 14px;
-  cursor: pointer;
-  color: var(--ink);
-  background: transparent;
-  border: 0;
-  border-left: 1px solid var(--line);
-  letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0 10px 14px;
+    cursor: pointer;
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    border-left: 1px solid var(--line);
+    letter-spacing: 0.08em;
 }
 
 .hero {
-  min-height: 670px;
-  display: flex;
-  flex-direction: column;
-  padding-block: 22px 32px;
+    min-height: 670px;
+    display: flex;
+    flex-direction: column;
+    padding-block: 22px 32px;
 }
 
 .hero-topline,
 .hero-bottomline {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.09em;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
 }
 
 .hero-topline p {
-  margin: 0;
+    margin: 0;
 }
 
 .hero-copy {
-  max-width: 1040px;
-  margin: auto 0;
+    max-width: 1040px;
+    margin: auto 0;
 }
 
 .eyebrow {
-  margin: 0 0 18px;
-  color: var(--acid);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+    margin: 0 0 18px;
+    color: var(--acid);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
 }
 
 h1 {
@@ -135,217 +135,225 @@ h1 {
     font-weight: 700;
     line-height: 0.85;
     letter-spacing: -0.085em;
+
+    /* Make the heading appear 50% smaller */
+    transform: scale(0.5);
+    transform-origin: left center;
 }
 
 .hero-subtitle {
-  max-width: 510px;
-  margin: 32px 0 13px;
-  font-size: clamp(13px, 1.6vw, 18px);
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+    max-width: 510px;
+    margin: 32px 0 13px;
+    font-size: clamp(13px, 1.6vw, 18px);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
 }
 
 .hero-description {
-  max-width: 490px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.55;
+    max-width: 490px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.55;
 }
 
 .hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 35px 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 35px 0 auto;
 }
 
 .button {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 210px;
-  padding: 14px 16px;
-  border: 1px solid var(--ink);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.07em;
-  transition: 0.2s ease;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 210px;
+    padding: 14px 16px;
+    border: 1px solid var(--ink);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    transition: 0.2s ease;
 }
 
 .button-solid {
-  background: var(--ink);
-  color: var(--black);
+    background: var(--ink);
+    color: var(--black);
 }
 
 .button-solid:hover {
-  background: var(--acid);
-  border-color: var(--acid);
+    background: var(--acid);
+    border-color: var(--acid);
 }
 
 .button-outline:hover {
-  color: var(--acid);
-  border-color: var(--acid);
+    color: var(--acid);
+    border-color: var(--acid);
 }
 
 .hero-bottomline {
-  align-items: end;
+    align-items: end;
 }
 
 .placeholder-area {
-  position: relative;
-  min-height: 480px;
-  margin-bottom: 70px;
-  border-top: 1px solid var(--line);
+    position: relative;
+    min-height: 480px;
+    margin-bottom: 70px;
+    border-top: 1px solid var(--line);
 }
 
 .placeholder-card {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
 .placeholder-card span {
-  color: var(--ink);
+    color: var(--ink);
 }
 
 .placeholder-card small {
-  font-size: 9px;
+    font-size: 9px;
 }
 
 .card-tall {
-  top: 54px;
-  left: 2%;
-  width: 23%;
-  height: 330px;
+    top: 54px;
+    left: 2%;
+    width: 23%;
+    height: 330px;
 }
 
 .card-wide {
-  top: 112px;
-  left: 30%;
-  width: 43%;
-  height: 192px;
+    top: 112px;
+    left: 30%;
+    width: 43%;
+    height: 192px;
 }
 
 .card-small {
-  top: 36px;
-  right: 2%;
-  width: 20%;
-  height: 143px;
+    top: 36px;
+    right: 2%;
+    width: 20%;
+    height: 143px;
 }
 
 .card-outline {
-  right: 8%;
-  bottom: 20px;
-  width: 26%;
-  height: 115px;
-  background: transparent;
+    right: 8%;
+    bottom: 20px;
+    width: 26%;
+    height: 115px;
+    background: transparent;
 }
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0 30px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 30px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
 }
 
 @media (max-width: 640px) {
-  .site-header,
-  .site-footer,
-  .hero,
-  .placeholder-area {
-    width: min(100% - 32px, 1440px);
-  }
+    .site-header,
+    .site-footer,
+    .hero,
+    .placeholder-area {
+        width: min(100% - 32px, 1440px);
+    }
 
-  .site-header {
-    min-height: 66px;
-  }
+    .site-header {
+        min-height: 66px;
+    }
 
-  .desktop-nav {
-    display: none;
-  }
+    .desktop-nav {
+        display: none;
+    }
 
-  .nav-button {
-    padding-left: 10px;
-  }
+    .nav-button {
+        padding-left: 10px;
+    }
 
-  .nav-button span:first-child {
-    display: none;
-  }
+    .nav-button span:first-child {
+        display: none;
+    }
 
-  .hero {
-    min-height: 620px;
-    padding-top: 18px;
-  }
+    .hero {
+        min-height: 620px;
+        padding-top: 18px;
+    }
 
-  h1 {
-    font-size: clamp(24.5px, 7.5vw, 38px);
-    line-height: 0.88;
-}
+    h1 {
+        font-size: clamp(24.5px, 7.5vw, 38px);
+        line-height: 0.88;
 
-  .hero-subtitle {
-    margin-top: 25px;
-  }
+        /* Keep the heading 50% smaller on mobile */
+        transform: scale(0.5);
+        transform-origin: left center;
+    }
 
-  .hero-actions {
-    margin-top: 28px;
-  }
+    .hero-subtitle {
+        margin-top: 25px;
+    }
 
-  .button {
-    width: 100%;
-  }
+    .hero-actions {
+        margin-top: 28px;
+    }
 
-  .hero-bottomline {
-    flex-wrap: wrap;
-    align-items: start;
-  }
+    .button {
+        width: 100%;
+    }
 
-  .hero-bottomline span {
-    order: 3;
-    width: 100%;
-  }
+    .hero-bottomline {
+        flex-wrap: wrap;
+        align-items: start;
+    }
 
-  .placeholder-area {
-    min-height: 610px;
-  }
+    .hero-bottomline span {
+        order: 3;
+        width: 100%;
+    }
 
-  .card-tall {
-    top: 25px;
-    left: 0;
-    width: 46%;
-    height: 250px;
-  }
+    .placeholder-area {
+        min-height: 610px;
+    }
 
-  .card-small {
-    top: 25px;
-    right: 0;
-    width: 46%;
-    height: 130px;
-  }
+    .card-tall {
+        top: 25px;
+        left: 0;
+        width: 46%;
+        height: 250px;
+    }
 
-  .card-wide {
-    top: 300px;
-    left: 0;
-    width: 100%;
-    height: 130px;
-  }
+    .card-small {
+        top: 25px;
+        right: 0;
+        width: 46%;
+        height: 130px;
+    }
 
-  .card-outline {
-    right: 0;
-    bottom: 30px;
-    width: 72%;
-    height: 105px;
-  }
+    .card-wide {
+        top: 300px;
+        left: 0;
+        width: 100%;
+        height: 130px;
+    }
+
+    .card-outline {
+        right: 0;
+        bottom: 30px;
+        width: 72%;
+        height: 105px;
+    }
 }
